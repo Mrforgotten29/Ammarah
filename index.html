@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Ammarah Salie 💗</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  padding: 25px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #ffd8e8, #f8c2e0, #e8d9ff);
+  color: #783c60;
+}
+
+.hearts {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.heart {
+  position: absolute;
+  bottom: -40px;
+  animation: floatUp linear infinite;
+  opacity: .7;
+}
+
+@keyframes floatUp {
+  0% { transform: translateY(0) rotate(0); opacity: 0; }
+  15% { opacity: .8; }
+  100% { transform: translateY(-115vh) rotate(40deg); opacity: 0; }
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 480px;
+  padding: 32px 23px;
+  text-align: center;
+  border: 2px solid #ffffffbb;
+  border-radius: 28px;
+  background: rgba(255,255,255,.88);
+  box-shadow: 0 20px 55px #b65c8d35;
+  animation: appear .8s ease;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.top-heart {
+  font-size: 55px;
+  animation: heartbeat 1.5s infinite;
+  margin-bottom: 12px;
+}
+
+@keyframes heartbeat {
+  0%,100% { transform: scale(1); }
+  15% { transform: scale(1.13); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.1); }
+}
+
+.tag {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 30px;
+  background: #ffe4ef;
+  color: #bd5485;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(32px, 8vw, 43px);
+  color: #bd5485;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.subtitle {
+  line-height: 1.8;
+  margin-bottom: 18px;
+}
+
+.divider {
+  color: #e69abd;
+  letter-spacing: 8px;
+  margin: 18px 0;
+}
+
+.message {
+  background: #fff2f8;
+  border: 1px solid #f9d8e7;
+  border-radius: 18px;
+  padding: 20px 17px;
+  line-height: 1.85;
+  font-size: 14px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.question {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  line-height: 1.5;
+  color: #b9477d;
+  margin-bottom: 20px;
+}
+
+.buttons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  min-height: 105px;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  border-radius: 50px;
+  padding: 15px 18px;
+  width: 100%;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.yes {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(135deg, #ed82ad, #cf4388);
+  color: white;
+  box-shadow: 0 8px 22px #d76a9a45;
+  animation: heartbeat 1.5s infinite;
+}
+
+.maybe {
+  width: 85%;
+  background: #fff0f6;
+  color: #bd5485;
+  border: 1px solid #f5c6dc;
+  transition: transform .25s ease, opacity .25s ease;
+  touch-action: manipulation;
+}
+
+.signature {
+  margin-top: 20px;
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #b66b91;
+  line-height: 1.8;
+}
+
+.footer {
+  font-size: 11px;
+  color: #b88ba5;
+  margin-top: 20px;
+}
+
+#surprise {
+  display: none;
+  margin-top: 24px;
+  padding: 22px 15px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ffe2ef, #f4e3ff);
+  animation: appear .7s ease;
+}
+
+#surprise h2 {
+  color: #bd5485;
+  font-family: Georgia, serif;
+  margin-bottom: 13px;
+}
+
+#surprise p {
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.confetti {
+  position: fixed;
+  top: -35px;
+  z-index: 10;
+  pointer-events: none;
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .card { padding: 27px 17px; }
+  .message { padding: 17px 13px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hearts" id="hearts"></div>
+
+<main class="card">
+
+  <div class="top-heart">💗</div>
+
+  <div class="tag">A LITTLE SURPRISE FOR YOU</div>
+
+  <h1>Dear Ammarah<br>Salie ♡</h1>
+
+  <p class="subtitle">
+    There's something I've been wanting to ask you...
+    and I made this little website just for you! 💖
+  </p>
+
+  <div class="divider">♡ ♡ ♡</div>
+
+  <div class="message">
+    Ammarah, some people come into our lives and make
+    ordinary moments feel special. 💕
+
+    <br><br>
+
+    I would love for us to create beautiful memories,
+    laugh over the silliest things, support each other
+    through difficult days, and build a friendship
+    filled with trust, kindness and happiness.
+
+    <br><br>
+
+    You deserve a friend who genuinely cares, listens
+    without judging, celebrates your wins, and reminds
+    you that you're never alone. 🌸
+
+    <br><br>
+
+    So, I have one little question for you...
+  </div>
+
+  <h2 class="question">
+    Ammarah Salie,<br>
+    will you be my BEST FRIEND? 🥹💗
+  </h2>
+
+  <div class="buttons" id="buttons">
+
+    <button class="yes" onclick="sayYes()">
+      💗 YES, OF COURSE! 💗
+    </button>
+
+    <button class="maybe" id="maybeButton"
+      onclick="runAway()">
+      Let me think about it 🙈
+    </button>
+
+  </div>
+
+  <div id="surprise">
+    <div style="font-size:45px; margin-bottom:12px">
+      🥹💖🫂
+    </div>
+
+    <h2>YAYYYY, AMMARAH!! 🎉</h2>
+
+    <p>
+      YOU SAID YES!! 😭💕
+      <br><br>
+
+      Here's to friendship, endless laughs, silly
+      conversations, unforgettable memories, and
+      always cheering each other on! 🌸
+      <br><br>
+
+      No friendship has to be perfect to be beautiful.
+      What matters is that we choose to care, respect,
+      and show up for each other. 🫶🏻
+      <br><br>
+
+      <strong>
+        Officially hoping for a friendship that lasts
+        for a very, very long time! 💗
+      </strong>
+    </p>
+
+    <div style="font-size:28px; margin-top:15px">
+      🌷 💕 🦋 💕 🌷
+    </div>
+  </div>
+
+  <p class="signature">
+    Thank you for being you, Ammarah. 💌<br>
+    I'm so lucky to have you in my life.
+  </p>
+
+  <div class="divider">♡ ♡ ♡</div>
+
+  <p class="footer">
+    ♥ OFFICIAL BEST FRIENDS LOADING... ♥
+  </p>
+
+</main>
+
+<script>
+const hearts = document.getElementById("hearts");
+const symbols = ["💗", "💕", "♡", "💖", "🌸", "💞"];
+
+for (let i = 0; i < 28; i++) {
+  const heart = document.createElement("span");
+  heart.className = "heart";
+  heart.textContent =
+    symbols[Math.floor(Math.random() * symbols.length)];
+
+  heart.style.left = Math.random() * 100 + "%";
+  heart.style.fontSize = (14 + Math.random() * 22) + "px";
+  heart.style.animationDuration = (7 + Math.random() * 10) + "s";
+  heart.style.animationDelay = (Math.random() * 12) + "s";
+
+  hearts.appendChild(heart);
+}
+
+let attempts = 0;
+
+function runAway() {
+  const button = document.getElementById("maybeButton");
+
+  if (!button || button.style.display === "none") return;
+
+  attempts++;
+
+  if (attempts >= 7) {
+    button.style.opacity = "0";
+    button.style.transform = "scale(0)";
+    button.style.pointerEvents = "none";
+
+    setTimeout(() => {
+      button.style.display = "none";
+    }, 300);
+
+    return;
+  }
+
+  const x = Math.random() * 140 - 70;
+  const y = Math.random() * 65 - 32;
+
+  button.style.transform =
+    `translate(${x}px, ${y}px) scale(${1 - attempts * 0.12})`;
+
+  button.style.opacity = String(1 - attempts * 0.1);
+}
+
+function sayYes() {
+  document.getElementById("surprise").style.display = "block";
+
+  document.getElementById("maybeButton").style.display = "none";
+
+  document.getElementById("surprise").scrollIntoView({
+    behavior: "smooth",
+    block: "nearest"
+  });
+
+  for (let i = 0; i < 65; i++) {
+    setTimeout(() => {
+      const item = document.createElement("span");
+      item.className = "confetti";
+      item.textContent =
+        symbols[Math.floor(Math.random() * symbols.length)];
+
+      item.style.left = Math.random() * 100 + "vw";
+      item.style.fontSize = (18 + Math.random() * 25) + "px";
+      item.style.animationDuration = (2 + Math.random() * 3) + "s";
+
+      document.body.appendChild(item);
+
+      setTimeout(() => item.remove(), 5500);
+    }, i * 35);
+  }
+}
+</script>
+
+</body>
+  </html>
